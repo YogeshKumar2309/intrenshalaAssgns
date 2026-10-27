@@ -20,6 +20,8 @@ const Gallery = () => {
     })
    }
 
+   
+
 
   //filter logic here
   const filteredPhoto = photos.filter((photo) =>
@@ -41,9 +43,11 @@ const Gallery = () => {
     <div className=' bg-[rgba(0,0,0,0.08)]'>
       <div className="flex justify-between ms-4 items-center h-20">
         <div className='font-bold text-2xl'>
-          <span className='text-amber-600'>Photo</span>
-          <span className="">Gallery</span>
-
+          {/* <span className='text-amber-600'>Photo</span>
+          <span className="">Gallery</span> */}
+          
+                <span className='text-amber-600'>C</span>
+          <span className="">elebrare</span>
         </div>
 
         <SearchBar

@@ -20,8 +20,8 @@ export const favouritesReducer = (state, action) => {
                 favourites,
             }
         }
-        case "LOAD_FAVOURITES" : 
-            return { ...state, favourites : action.payload};
+        // case "LOAD_FAVOURITES" : 
+        //     return { ...state, favourites : action.payload};
         
 
         default :
