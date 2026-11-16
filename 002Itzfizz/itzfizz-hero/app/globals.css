@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: auto; /* GSAP scrub handles the smoothing */
+}
+
+/* Hint the browser that these animate via transform/opacity only */
+.will-move {
+  will-change: transform, opacity;
+}
+
+/* Road: the dashed centre line is a tall strip we translate (no layout work) */
+.road-dashes {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    rgba(236, 231, 216, 0.55) 0 56px,
+    transparent 56px 120px
+  );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .will-move {
+    will-change: auto;
+  }
+}
